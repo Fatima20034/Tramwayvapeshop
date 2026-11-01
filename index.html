@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en-NZ">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Tramway Vape Shop | Pods, Kits &amp; Liquids NZ</title>
+<meta name="description" content="Tramway Vape Shop, Enderley, Hamilton – specialist vape retailer. Pod kits, devices and e-liquids, fast NZ delivery. R18 – no sales to under 18s.">
+<style>
+:root{--bg:#f6f4ef;--card:#fff;--ink:#16181d;--mute:#5d6470;--line:#e2ded4;--acc:#e8512d;--acc2:#1d3b4a;--warn:#b3261e;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#111418;--card:#1a1f26;--ink:#f1efe9;--mute:#9aa3af;--line:#2b323c;--acc:#ff6b45;--acc2:#7fb4c9}}
+:root[data-theme="dark"]{--bg:#111418;--card:#1a1f26;--ink:#f1efe9;--mute:#9aa3af;--line:#2b323c;--acc:#ff6b45;--acc2:#7fb4c9}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;line-height:1.55}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:1120px;margin:0 auto;padding:0 20px}
+.warn{background:var(--warn);color:#fff;font-size:12px;text-align:center;padding:7px 12px;font-weight:600}
+header{position:sticky;top:env(safe-area-inset-top,0px);background:var(--bg);border-bottom:1px solid var(--line);z-index:5}
+.nav{display:flex;align-items:center;justify-content:space-between;gap:16px;height:64px}
+.logo{font-weight:900;font-size:20px;letter-spacing:-.02em;display:flex;align-items:center;gap:8px}
+.logo i{width:30px;height:30px;border-radius:8px;background:var(--acc);display:grid;place-items:center;color:#fff;font-style:normal;font-size:16px}
+nav ul{display:flex;gap:22px;list-style:none;margin:0;padding:0;font-size:14px;font-weight:600}
+nav a:hover{color:var(--acc)}
+.cart{background:var(--ink);color:var(--bg);border:0;border-radius:99px;padding:8px 16px;font-weight:700;cursor:pointer;font-size:14px}
+@media(max-width:720px){nav ul{display:none}}
+.hero{padding:64px 0 48px;display:grid;grid-template-columns:1.2fr 1fr;gap:40px;align-items:center}
+.hero h1{font-size:clamp(34px,6vw,60px);line-height:1.02;letter-spacing:-.03em;margin:0 0 16px}
+.hero h1 span{color:var(--acc)}
+.hero p{color:var(--mute);font-size:18px;max-width:46ch;margin:0 0 24px}
+.btn{display:inline-block;background:var(--acc);color:#fff;padding:13px 24px;border-radius:12px;font-weight:700;border:0;cursor:pointer;font-size:15px}
+.btn.alt{background:transparent;color:var(--ink);border:1.5px solid var(--ink);margin-left:8px}
+.panel{background:var(--acc2);border-radius:24px;aspect-ratio:1/1;display:grid;place-items:center;color:#fff;position:relative;overflow:hidden}
+.panel b{font-size:clamp(60px,10vw,110px);font-weight:900;letter-spacing:-.05em}
+.panel small{position:absolute;bottom:20px;left:0;right:0;text-align:center;opacity:.75;font-size:13px}
+.panel:before{content:"";position:absolute;width:70%;aspect-ratio:1;border-radius:50%;background:var(--acc);opacity:.35;top:-15%;right:-15%}
+@media(max-width:820px){.hero{grid-template-columns:1fr;padding-top:36px}.panel{aspect-ratio:16/9}}
+.trust{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin-bottom:56px}
+.trust div{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:18px}
+.trust strong{display:block;margin-bottom:2px}.trust span{color:var(--mute);font-size:14px}
+h2{font-size:28px;letter-spacing:-.02em;margin:0 0 20px}
+section{margin-bottom:64px}
+.cats{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px}
+.cat{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:24px;transition:.15s}
+.cat:hover{transform:translateY(-3px);border-color:var(--acc)}
+.cat h3{margin:0 0 4px;font-size:20px}.cat p{margin:0 0 14px;color:var(--mute);font-size:14px}
+.cat em{font-style:normal;color:var(--acc);font-weight:700;font-size:14px}
+.tabs{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:18px}
+.tabs button{border:1px solid var(--line);background:var(--card);color:var(--ink);padding:8px 16px;border-radius:99px;font-weight:600;cursor:pointer}
+.tabs button.on{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:16px}
+.prod{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:14px;display:flex;flex-direction:column}
+.ph{aspect-ratio:1;border-radius:12px;background:repeating-linear-gradient(45deg,var(--line),var(--line) 8px,transparent 8px,transparent 16px);display:grid;place-items:center;text-align:center;font-size:11px;color:var(--mute);padding:14px;margin-bottom:12px}
+.prod h4{margin:0 0 2px;font-size:15px}.prod .t{color:var(--mute);font-size:13px;margin-bottom:10px}
+.prod .row{margin-top:auto;display:flex;align-items:center;justify-content:space-between}
+.prod .p{font-weight:800;font-size:18px}
+.prod button{background:var(--ink);color:var(--bg);border:0;border-radius:10px;padding:8px 14px;font-weight:700;cursor:pointer}
+.note{font-size:12px;color:var(--mute);margin-top:12px}
+.split{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+@media(max-width:760px){.split{grid-template-columns:1fr}}
+.box{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:28px}
+.box h3{margin:0 0 10px;font-size:22px}
+.box p{color:var(--mute);margin:0 0 8px}
+.box a.maplink{color:var(--acc);font-weight:700}
+.box a.maplink:hover{text-decoration:underline}
+.box a.tel{color:var(--ink);font-weight:600}
+.hours{width:100%;border-collapse:collapse;font-size:15px}.hours td{padding:6px 0;border-bottom:1px solid var(--line)}.hours td:last-child{text-align:right;font-weight:600}
+#nl{display:flex;gap:8px;flex-wrap:wrap;margin-top:14px}
+#nl input{flex:1;min-width:160px}
+input{padding:12px 14px;border-radius:10px;border:1px solid var(--line);background:var(--bg);color:var(--ink);font-size:15px}
+footer{background:var(--acc2);color:#e9eef0;padding:44px 0 28px;font-size:14px}
+footer .cols{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:28px;margin-bottom:28px}
+footer h5{margin:0 0 10px;font-size:14px;color:#fff}footer ul{list-style:none;margin:0;padding:0}footer li{margin-bottom:6px;opacity:.85}
+.legal{border-top:1px solid #ffffff30;padding-top:20px;font-size:12px;opacity:.8}
+#gate{position:fixed;inset:0;background:#0c0f13f2;z-index:50;display:grid;place-items:center;padding:20px}
+#gate .m{background:var(--card);border-radius:22px;max-width:420px;padding:34px;text-align:center}
+#gate h2{margin:0 0 8px}#gate p{color:var(--mute);margin:0 0 22px;font-size:15px}
+#gate .btn{width:100%;margin:0 0 10px}#gate .alt{margin:0;width:100%;text-align:center}
+#gate small{display:block;margin-top:14px;color:var(--mute);font-size:11px}
+/* checkout */
+#co{position:fixed;inset:0;background:rgba(0,0,0,.6);display:none;align-items:center;justify-content:center;z-index:90;padding:16px}
+#co.open{display:flex}
+#co .m{background:var(--card);color:var(--ink);border-radius:18px;max-width:460px;width:100%;max-height:90vh;overflow:auto;padding:24px}
+#co h3{margin:0 0 12px}#co table{width:100%;border-collapse:collapse;font-size:14px;margin:8px 0}
+#co td{padding:5px 0;border-bottom:1px solid var(--line)}#co td:last-child{text-align:right}
+#co input:not([type=checkbox]){width:100%;margin:6px 0}
+#co label{display:block;font-size:14px;margin:6px 0}
+#co .go{width:100%;margin-top:10px;padding:12px;border:0;border-radius:999px;background:var(--acc);color:#fff;font-weight:700;font-size:15px;cursor:pointer}
+#co .go:disabled{opacity:.6;cursor:wait}
+#co .x{float:right;background:none;border:0;font-size:22px;color:var(--mute);cursor:pointer}
+#co small{color:var(--mute)}
+#co .pm{display:flex;align-items:center;gap:8px;padding:10px 12px;border:1.5px solid var(--line);border-radius:10px;margin:6px 0;cursor:pointer;font-weight:600}
+#co .pm input{width:auto!important;margin:0!important}
+#co .bank{background:var(--bg);border:1px solid var(--line);border-radius:10px;padding:12px;font-size:14px;margin:10px 0}
+</style>
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4.4.1/dist/email.min.js"></script>
+</head>
+<body>
+<div id="gate" role="dialog" aria-modal="true" aria-labelledby="gt">
+  <div class="m">
+    <div class="logo" style="justify-content:center;margin-bottom:16px"><i>T</i>Tramway Vape Shop</div>
+    <h2 id="gt">Age verification</h2>
+    <p>This website sells nicotine products. Are you at least 18 years old?</p>
+    <button class="btn" id="yes">Yes, I'm 18+</button>
+    <a class="btn alt" href="https://www.health.govt.nz/your-health/healthy-living/addictions/smoking-and-vaping" rel="noopener">Under 18 – leave</a>
+    <small>THIS PRODUCT CONTAINS NICOTINE, WHICH IS A HIGHLY ADDICTIVE SUBSTANCE.<br>No sales to persons under the age of 18.</small>
+  </div>
+</div>
+
+<div class="warn">THIS PRODUCT CONTAINS NICOTINE, WHICH IS A HIGHLY ADDICTIVE SUBSTANCE. · HE NIKOTINI KEI ROTO I TENEI MEA, HE MATU TINO WHAKAWARA. · No sales to under 18s.</div>
+
+<header><div class="wrap nav">
+  <a class="logo" href="#top"><i>T</i>Tramway Vape Shop</a>
+  <nav><ul><li><a href="#shop">Shop</a></li><li><a href="#featured">Featured</a></li><li><a href="#visit">Visit us</a></li><li><a href="#wholesale">Wholesale</a></li><li><a href="#contact">Contact</a></li></ul></nav>
+  <button class="cart" id="cart">Cart (0)</button>
+</div></header>
+
+<main id="top" class="wrap">
+  <div class="hero">
+    <div>
+      <h1>Switch smarter.<br><span>Vape local.</span></h1>
+      <p>Pods, kits, devices and e-liquids from a specialist NZ vape shop in Hamilton. Honest advice, genuine products and fast delivery nationwide.</p>
+      <a class="btn" href="#shop">Shop now</a><a class="btn alt" href="#visit">Visit the store</a>
+    </div>
+    <div class="panel"><b>R18</b><small>Age-verified · Genuine stock · NZ-wide delivery</small></div>
+  </div>
+
+  <div class="trust">
+    <div><strong>Fast delivery</strong><span>1–2 business days on most orders</span></div>
+    <div><strong>100% genuine</strong><span>Authorised stock only, every time</span></div>
+    <div><strong>Free shipping from $39</strong><span>Tracked courier across NZ</span></div>
+    <div><strong>Secure payment</strong><span>Safe, reliable transactions</span></div>
+  </div>
+
+  <section id="shop">
+    <h2>Shop by category</h2>
+    <div class="cats">
+      <a class="cat" href="#featured" data-f="Pods"><h3>Prefilled Pods</h3><p>6000 – 15000 puff pods in 100+ flavours.</p><em>Shop pods →</em></a>
+      <a class="cat" href="#featured" data-f="Kits"><h3>Starter Kits</h3><p>Everything you need to get going, device and pod included.</p><em>Shop kits →</em></a>
+      <a class="cat" href="#featured" data-f="Devices"><h3>Devices</h3><p>Rechargeable batteries and reusable hardware.</p><em>Shop devices →</em></a>
+      <a class="cat" href="#featured" data-f="Liquids"><h3>E-Liquids</h3><p>Multi-device compatible liquids in a range of flavours.</p><em>Shop liquids →</em></a>
+    </div>
+  </section>
+
+  <section id="featured">
+    <h2>Featured products</h2>
+    <div class="tabs" id="tabs"></div>
+    <div class="grid" id="grid"></div>
+    <p class="note">Sample products and prices – replace with your real range. Product images are not displayed due to regulatory requirements.</p>
+  </section>
+
+  <section id="visit" class="split">
+    <div class="box">
+      <h3>Visit Tramway Vape Shop</h3>
+      <p>Pop in for friendly, no-pressure advice from our team. Photo ID required.</p>
+      <p><strong>Address:</strong><br>97 Fifth Avenue<br>Enderley, Hamilton 3214<br>New Zealand</p>
+      <p><strong>Phone:</strong> <a class="tel" href="tel:+64224589257">022 458 9257</a></p>
+      <p><a class="maplink" href="https://www.google.com/maps/search/?api=1&amp;query=Tramway+Vape+Shop+97+Fifth+Avenue+Enderley+Hamilton+3214" target="_blank" rel="noopener">Get directions on Google Maps →</a></p>
+      <br>
+      <table class="hours">
+        <tr><td>Monday</td><td>[add hours]</td></tr>
+        <tr><td>Tuesday</td><td>[add hours]</td></tr>
+        <tr><td>Wednesday</td><td>[add hours]</td></tr>
+        <tr><td>Thursday</td><td>[add hours]</td></tr>
+        <tr><td>Friday</td><td>[add hours]</td></tr>
+        <tr><td>Saturday</td><td>[add hours]</td></tr>
+        <tr><td>Sunday</td><td>[add hours] – 11:00 pm</td></tr>
+      </table>
+    </div>
+    <div class="box" id="wholesale">
+      <h3>Wholesale &amp; bulk</h3>
+      <p>Are you a retailer? Get trade pricing, reliable supply and a dedicated account contact.</p>
+      <p>Wholesale is available to licensed specialist and general retailers only. Products bought from this site are for personal use and are not to be resold.</p>
+      <br><a class="btn" href="#contact">Enquire about trade</a>
+    </div>
+  </section>
+
+  <section id="contact" class="box">
+    <h3>Subscribe to our newsletter</h3>
+    <p>New arrivals and store news. Adults 18+ only.</p>
+    <form id="nl"><input required placeholder="Name" aria-label="Name"><input required type="email" placeholder="Email" aria-label="Email"><button class="btn">Subscribe</button></form>
+    <p class="note" id="nlmsg" role="status"></p>
+  </section>
+</main>
+
+<footer><div class="wrap">
+  <div class="cols">
+    <div><div class="logo" style="color:#fff;margin-bottom:10px"><i>T</i>Tramway Vape Shop</div><div style="opacity:.85">97 Fifth Avenue, Enderley, Hamilton 3214<br>Phone: <a href="tel:+64224589257">022 458 9257</a><br>Email: hello@tramwayvape.co.nz</div></div>
+    <div><h5>Shop</h5><ul><li>Prefilled Pods</li><li>Starter Kits</li><li>Devices</li><li>E-Liquids</li></ul></div>
+    <div><h5>Information</h5><ul><li>About</li><li>Order tracking</li><li>Returns policy</li><li>Privacy policy</li><li>Terms &amp; conditions</li></ul></div>
+  </div>
+  <div class="legal">
+    <p><strong>Sale and purchase restrictions:</strong> Products are age-restricted and not to be used by persons under 18. Not intended for people who are pregnant or breastfeeding, or who have or are at risk of heart disease, high blood pressure or diabetes, or who take medication for depression or asthma. Talk to your doctor or health professional. Quitting smoking support: Quitline 0800 778 778.</p>
+    <p>©2026 Tramway Vape Shop. All rights reserved. No sales to persons under the age of 18.</p>
+  </div>
+</div></footer>
+
+<div id="co"><div class="m"><button class="x" id="cox" aria-label="Close">&times;</button><div id="cob"></div></div></div>
+
+<script>
+/* ================= SETTINGS – EDIT THIS BLOCK ================= */
+var CONFIG={
+  // EmailJS (emailjs.com, free): one service, two templates
+  EMAILJS_PUBLIC_KEY:"YOUR_PUBLIC_KEY",
+  EMAILJS_SERVICE_ID:"YOUR_SERVICE_ID",
+  CUSTOMER_TEMPLATE_ID:"YOUR_CUSTOMER_TEMPLATE_ID", // receipt to the customer ("To email" = {{to_email}})
+  SHOP_TEMPLATE_ID:"YOUR_SHOP_TEMPLATE_ID",         // new-order alert to you ("To email" = your own address)
+
+  // BANK TRANSFER: enter YOUR shop's account number for each bank you hold an account with.
+  // Leave an account as "" to hide that bank at checkout.
+  BANKS:{
+    ANZ:{name:"Tramway Vape Shop",account:"01-XXXX-XXXXXXX-XX"},
+    BNZ:{name:"Tramway Vape Shop",account:"02-XXXX-XXXXXXX-XX"},
+    ASB:{name:"Tramway Vape Shop",account:"12-XXXX-XXXXXXX-XX"}
+  },
+
+  // APPLE PAY: paste the hosted payment page URL from your payment provider (it must support Apple Pay).
+  // Leave "" to hide Apple Pay. The button only shows on Safari / Apple devices that can use Apple Pay.
+  APPLE_PAY_LINK:"",
+
+  FREE_SHIP_FROM:39,SHIPPING:6.9
+};
+/* ============================================================== */
+
+var items=[
+ ["Pods","Prefilled Pod 6000 Puffs","Multiple flavours",14.90],
+ ["Pods","Prefilled Pod 10000 Puffs","Multiple flavours",19.90],
+ ["Pods","Prefilled Pod 15000 Puffs","Multiple flavours",22.90],
+ ["Kits","Starter Kit 10000 Puffs","Device + pod",29.90],
+ ["Kits","Starter Kit 15000 Puffs","Device + pod",32.90],
+ ["Devices","Rechargeable Device","Reusable battery",14.90],
+ ["Devices","Device 800mAh","USB-C charging",15.90],
+ ["Liquids","E-Liquid 28.5mg/ml","13 flavours",24.90]
+];
+var cats=["All","Pods","Kits","Devices","Liquids"],cur="All";
+var tabs=document.getElementById("tabs"),grid=document.getElementById("grid"),cartBtn=document.getElementById("cart");
+
+function render(){
+  tabs.innerHTML="";
+  cats.forEach(function(c){var b=document.createElement("button");b.textContent=c;if(c===cur)b.className="on";b.onclick=function(){cur=c;render()};tabs.appendChild(b)});
+  grid.innerHTML="";
+  items.filter(function(i){return cur==="All"||i[0]===cur}).forEach(function(i){
+    var d=document.createElement("div");d.className="prod";
+    d.innerHTML='<div class="ph">Product images cannot be displayed due to regulatory requirements</div><h4></h4><div class="t"></div><div class="row"><span class="p">$'+i[3].toFixed(2)+'</span><button>Add</button></div>';
+    d.querySelector("h4").textContent=i[1];d.querySelector(".t").textContent=i[2];
+    d.querySelector("button").onclick=function(){addItem(i)};
+    grid.appendChild(d)});
+}
+render();
+document.querySelectorAll(".cat").forEach(function(a){a.onclick=function(){cur=a.dataset.f;render()}});
+document.getElementById("nl").onsubmit=function(e){e.preventDefault();document.getElementById("nlmsg").textContent="Thanks for subscribing! (Demo form – connect to your email provider.)";e.target.reset()};
+
+/* age gate */
+var gate=document.getElementById("gate"),ok=false;
+try{ok=sessionStorage.getItem("age18")==="1"}catch(e){}
+if(ok)gate.style.display="none";
+document.getElementById("yes").onclick=function(){gate.style.display="none";try{sessionStorage.setItem("age18","1")}catch(e){}};
+
+/* cart + checkout */
+try{emailjs.init({publicKey:CONFIG.EMAILJS_PUBLIC_KEY})}catch(e){}
+var cart=[],co=document.getElementById("co"),cob=document.getElementById("cob");
+function money(v){return"$"+v.toFixed(2)}
+function esc(t){var d=document.createElement("div");d.textContent=t;return d.innerHTML}
+function updCart(){cartBtn.textContent="Cart ("+cart.reduce(function(a,c){return a+c.qty},0)+")"}
+function addItem(i){var f=cart.filter(function(c){return c.name===i[1]})[0];if(f)f.qty++;else cart.push({name:i[1],price:i[3],qty:1});updCart()}
+function total(){return cart.reduce(function(a,c){return a+c.price*c.qty},0)}
+function shipFor(t){return t>=CONFIG.FREE_SHIP_FROM?0:CONFIG.SHIPPING}
+function rows(){return cart.map(function(c){return"<tr><td>"+esc(c.name)+" × "+c.qty+"</td><td>"+money(c.price*c.qty)+"</td></tr>"}).join("")}
+function lines(){return cart.map(function(c){return c.name+" x "+c.qty+" - "+money(c.price*c.qty)}).join("\n")}
+
+function methods(){
+  var m=[];
+  ["ANZ","BNZ","ASB"].forEach(function(k){var b=CONFIG.BANKS[k];if(b&&b.account)m.push({id:k,label:k+" bank transfer",type:"bank"})});
+  try{if(CONFIG.APPLE_PAY_LINK&&window.ApplePaySession&&ApplePaySession.canMakePayments())m.push({id:"apple",label:"Apple Pay",type:"link"})}catch(e){}
+  return m}
+
+function openCart(){
+  if(!cart.length){cob.innerHTML="<h3>Your cart</h3><p>Your cart is empty.</p>"}
+  else{
+    var t=total(),ship=shipFor(t),ms=methods();
+    var pm=ms.length?ms.map(function(m,i){return'<label class="pm"><input type="radio" name="pm" value="'+m.id+'"'+(i?"":" checked")+'> '+m.label+'</label>'}).join(""):'<p>No payment methods are set up yet.</p>';
+    cob.innerHTML='<h3>Checkout</h3><table>'+rows()+'<tr><td>Shipping</td><td>'+(ship?money(ship):"Free")+'</td></tr><tr><td><b>Total (incl. GST)</b></td><td><b>'+money(t+ship)+'</b></td></tr></table>'+
+    '<input id="cn" placeholder="Full name" autocomplete="name"><input id="ce" type="email" placeholder="Email for your receipt" autocomplete="email"><input id="ca" placeholder="Delivery address" autocomplete="street-address">'+
+    '<p style="margin:12px 0 4px"><b>Payment method</b></p>'+pm+
+    '<label><input type="checkbox" id="c18"> I confirm I am 18 or over and will show ID on delivery</label>'+
+    '<button class="go" id="pay"'+(ms.length?"":" disabled")+'>Place order</button>'+
+    '<p><small>Bank transfer: your transfer details appear after you place the order. We ship once payment clears. Apple Pay opens our secure payment page.</small></p><p id="cerr" style="color:var(--warn)" role="alert"></p>';
+    document.getElementById("pay").onclick=checkout}
+  co.classList.add("open")}
+
+async function checkout(){
+  var name=document.getElementById("cn").value.trim(),email=document.getElementById("ce").value.trim(),addr=document.getElementById("ca").value.trim(),err=document.getElementById("cerr"),btn=document.getElementById("pay");
+  var sel=document.querySelector('input[name="pm"]:checked');
+  if(!name||!/^\S+@\S+\.\S+$/.test(email)||!addr){err.textContent="Please complete all fields with a valid email.";return}
+  if(!sel){err.textContent="Please choose a payment method.";return}
+  if(!document.getElementById("c18").checked){err.textContent="You must be 18+ to purchase.";return}
+  var method=methods().filter(function(m){return m.id===sel.value})[0];
+  var t=total(),ship=shipFor(t),tot=t+ship;
+  var order={id:"TV-"+Date.now().toString(36).toUpperCase(),date:new Date().toLocaleString("en-NZ"),gst:tot*3/23};
+  var status=method.type==="bank"?"Awaiting "+method.id+" bank transfer":"Sent to Apple Pay page";
+  var snapshot=cart.slice(),snapRows=rows();
+  btn.disabled=true;btn.textContent="Processing…";
+
+  var params={order_id:order.id,order_date:order.date,customer_name:name,customer_email:email,to_name:name,to_email:email,address:addr,
+    items:lines(),shipping:ship?money(ship):"Free",gst:money(order.gst),total:money(tot),status:status,payment_method:method.label};
+  var sent=false;
+  try{await emailjs.send(CONFIG.EMAILJS_SERVICE_ID,CONFIG.CUSTOMER_TEMPLATE_ID,params);sent=true}catch(e){}
+  try{await emailjs.send(CONFIG.EMAILJS_SERVICE_ID,CONFIG.SHOP_TEMPLATE_ID,params)}catch(e){}
+
+  if(method.type==="link"){
+    window.location.href=CONFIG.APPLE_PAY_LINK+"?amount="+tot.toFixed(2)+"&ref="+encodeURIComponent(order.id);
+    return}
+
+  var bk=CONFIG.BANKS[method.id];
+  var payBlock='<div class="bank"><b>Pay by '+method.id+' bank transfer</b><br>Account name: '+esc(bk.name)+'<br>Account number: '+esc(bk.account)+'<br>Reference: <b>'+order.id+'</b><br>Amount: <b>'+money(tot)+'</b><br><small>Use the reference so we can match your payment. We ship once it clears.</small></div>';
+  cob.innerHTML='<h3>Thank you, '+esc(name)+'!</h3><p>Order <b>'+order.id+'</b> · '+order.date+'</p><table>'+snapRows+'<tr><td>Shipping</td><td>'+(ship?money(ship):"Free")+'</td></tr><tr><td>GST included</td><td>'+money(order.gst)+'</td></tr><tr><td><b>Total</b></td><td><b>'+money(tot)+'</b></td></tr></table>'+payBlock+
+  '<p>'+(sent?"A receipt has been emailed to <b>"+esc(email)+"</b>.":"<small>Receipt email could not be sent (EmailJS not set up yet). Keep this page as your receipt.</small>")+'</p>';
+  cart=[];updCart()}
+
+cartBtn.onclick=openCart;
+document.getElementById("cox").onclick=function(){co.classList.remove("open")};
+co.onclick=function(e){if(e.target===co)co.classList.remove("open")};
+</script>
+</body>
+</html>
